@@ -51,70 +51,78 @@
 
                 <h4>Finish Introductions</h4>
                 <ul>
-                    <li>Jared</li>
-                    <ul>
-                        <li>19 years old, never learned how to read</li>
-                        <li>Played his favorite song for us:</li>
-                        <li>
-                            <audio
-                                controls
-                                src="./assets/jared-favorite-song.mp3"
-                            >
-                                Your browser does not support the
-                                <code>audio</code> element.
-                            </audio>
-                        </li>
-                    </ul>
-                    <li>James</li>
-                    <ul>
-                        <li>self proclaimed 10x coder (has been coding since 7th grade)</li>
-                        <li><em>BIG</em> fan of RGB</li>
-                        <li>Showed us his setup:</li>
-                        <img src="./assets/james-setup.jpeg" width="150" height="113" alt="James' rgb setup"/>
-                    </ul>
+                    <li>Jared
+                        <ul>
+                            <li>19 years old, never learned how to read</li>
+                            <li>Played his favorite song for us:</li>
+                            <li>
+                                <audio
+                                    controls
+                                    src="./assets/jared-favorite-song.mp3"
+                                >
+                                    Your browser does not support the
+                                    <code>audio</code> element.
+                                </audio>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>James
+                        <ul>
+                            <li>self proclaimed 10x coder (has been coding since 7th grade)</li>
+                            <li><em>BIG</em> fan of RGB</li>
+                            <li>Showed us his setup:</li>
+                            <img src="./assets/james-setup.jpeg" width="150" height="113" alt="James' rgb setup"/>
+                        </ul>
+                    </li>
                 </ul>
 
                 <h4>Discuss Common Interests</h4>
                 <ul>
-                    <li>Baking</li>
-                    <ul>
-                        <li>Liked by Jared, Jonathan, Jonathan, Joana, Patrick</li>
-                        <li>Jackie likes cooking -- likes the topic choice</li>
-                        <li>James hates cooking and baking, but will code anything</li>
-                    </ul>
-                    <li>Fitness / Working out</li>
-                    <ul>
-                        <li>Liked by Jared, Jonathan, James, Patrick</li>
-                        <li>Jackie and Jeremy like running and eating well</li>
-                        <li>James said he works out to optimize his body and mind</li>
-                    </ul>
+                    <li>Baking
+                        <ul>
+                            <li>Liked by Jared, Jonathan, Jonathan, Joana, Patrick</li>
+                            <li>Jackie likes cooking -- likes the topic choice</li>
+                            <li>James hates cooking and baking, but will code anything</li>
+                        </ul>
+                    </li>
+                    <li>Fitness / Working out
+                        <ul>
+                            <li>Liked by Jared, Jonathan, James, Patrick</li>
+                            <li>Jackie and Jeremy like running and eating well</li>
+                            <li>James said he works out to optimize his body and mind</li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <h4>Begin project idea brainstorming</h4>
                 <ul>
-                    <li>Fitness / Working out</li>
-                    <ul>
-                        <li>Workout tracking app</li>
+                    <li>Fitness / Working out
                         <ul>
-                            <li>Would be relatively easy</li>
-                            <li>Scope is well defined</li>
-                            <li>Solid use cases</li>
+                            <li>Workout tracking app
+                                <ul>
+                                    <li>Would be relatively easy</li>
+                                    <li>Scope is well defined</li>
+                                    <li>Solid use cases</li>
+                                </ul>
+                            </li>
+                            <li>Workout social network
+                                <ul>
+                                    <li>A lot of work</li>
+                                    <li>Not good to learn SWE fundementatls</li>
+                                </ul>
+                            </li>
                         </ul>
-                        <li>Workout social network</li>
+                    </li>
+                    <li>Baking
                         <ul>
-                            <li>A lot of work</li>
-                            <li>Not good to learn SWE fundementatls</li>
+                            <li>Recipe Finder
+                            <ul>
+                                <li>Recommends recipes based on what you have</li>
+                                <li>James said he can develop a machine learning algorithm for this</li>
+                                <li>Not too much work (if developed without ML)</li>
+                            </ul>
                         </ul>
-                    </ul>
-                    <li>Baking</li>
-                    <ul>
-                        <li>Recipe Finder</li>
-                        <ul>
-                            <li>Recommends recipes based on what you have</li>
-                            <li>James said he can develop a machine learning algorithm for this</li>
-                            <li>Not too much work (if developed without ML)</li>
-                        </ul>
-                    </ul>
+                    </li>
                 </ul>
                 
                 Meeting time finished, will continue working on brainstorming next week.
@@ -153,12 +161,8 @@
                     </details>
                     <br>
                     <h4>Video of Patrick's dogs playing in the snow:</h4>
-                    <video controls width="250">
-
-                        <source src="/assets/dogs-in-snow.webm"
-                                type="video/webm"
-                                alt="Patrick's dogs playing in the snow">
-                    
+                    <video controls width="250" alt="Patrick's dogs playing in the snow">
+                        <source src="/assets/dogs-in-snow.webm" type="video/webm">
                         Sorry, your browser doesn't support embedded videos.
                     </video>
                 </div>
@@ -172,7 +176,7 @@
             <section>
                 <h3 id="feedback-form-header">4. Feedback Form</h3>
                 <form>
-                    <fieldset required>
+                    <fieldset>
                         <legend>Choose which colors you would like for team shirts</legend>
                         <input type="checkbox" id="green" name="green">
                         <label for="green">Green (only obvious choice)</label>
@@ -186,7 +190,7 @@
 
                     <br><br>
                     
-                    <fieldset required>
+                    <fieldset>
                         <label>Did you like the meeting?</label><br>
                         <input type="radio" value="Yes" id="liked-meeting" name="liked-meeting">
                         <label for="liked-meeting">Yes</label><br>
@@ -235,7 +239,7 @@
                         <br><br>
 
                         <label for="name">Name (to track responses):</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name">
                     </fieldset>
                     
                     <br><br> 
