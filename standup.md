@@ -8,7 +8,9 @@ Time: 9:00am
 ...
 
 ## General Updates
+
 Here, put any general updates, events, or issues that concern the entire team!
+
 ---
 ## Updates:
 - Person A
