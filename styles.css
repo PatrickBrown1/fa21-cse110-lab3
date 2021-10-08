@@ -5,6 +5,13 @@ header {
     position: sticky;
     border-bottom: 0.5mm solid black;
 }
+
+/* CSS color reset */
+* {
+    color: black;
+}
+
+/* Nav Bar */
 nav {
     width: 100%;
     min-height: 75px;
@@ -13,16 +20,42 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 }
+@media (max-width: 750px) { 
+    nav {
+        flex-direction: column;
+        align-items: left;
+    }
+ }
 nav > ul {
     list-style: none;
     display: flex;
+    flex-direction: inherit;
+    align-items: inherit;
 }
 #nav-item {
     display: inline;
     height: 100%;
     padding: 5px;
-    text-align: center;
+    width: auto;
 }
+
+/* Headers */
+.section-title {
+    color: rgb(57, 69, 203);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+}
+.main-header {
+    color: hsl(0,0%,0%);
+    font-family: 'Rubik', sans-serif;
+    text-decoration: underline;
+
+}
+/* selector list */
+h1, h2 {
+    text-decoration: underline;
+}
+
 section {
     position: relative;
     display: block;
@@ -51,18 +84,6 @@ section {
 section:hover {
     background-color: #fbfbe4;
 }
-.section-title {
-    color: rgb(57, 69, 203);
-    font-family: 'Rubik', sans-serif;
-    display: flex;
-}
-.main-header {
-    color: hsl(0,0%,0%);
-    font-family: 'Rubik', sans-serif;
-    text-decoration: underline;
-
-}
-
 
 /* Div for idea grid */
 .idea-grid {
@@ -70,4 +91,28 @@ section:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 100%;
     grid-gap: 2px;
+}
+
+/* attribute selector */
+option[value="Sixth"] {
+    background-color: red;
+}
+
+/* misc. selectors*/
+fieldset legend {
+    font-weight: bold;
+}
+input ~ label {
+    padding: 5px;
+}
+label + textarea {
+    background-color: rgb(237, 241, 255);
+    width: 70%;
+    padding-right: auto;
+}
+input.submit-button {
+    color: blue;
+}
+input.submit-button:active {
+    background-color: white;
 }
