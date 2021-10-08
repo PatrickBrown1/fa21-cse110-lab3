@@ -4,28 +4,29 @@
         <title>Team Green Bean Week 2 Meeting Notes</title>
         <meta charset="utf-8">
         <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,700;1,400&family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <header>
-            <h1>Team Green Bean Week 2 Meeting Notes</h1>
-            <h2>Project Idea Brainstorming</h2>
-            <h3 id="table-of-contents">0. Table of Contents</h3>
             <nav>
-                <ol start="0">
-                    <li><a href="#table-of-contents-header">Table of Contents</a></li>
-                    <li><a href="#introduction-header">Introduction</a></li>
-                    <li><a href="#meeting-notes-header">Meeting Notes</a></li>
-                    <li><a href="#extra-header">Extra</a></li>
-                    <li><a href="#feedback-form-header">Feedback Form</a></li>
-                </ol>
+                <h1 class="section-title">Team Green Bean Week 2 Meeting Notes</h1>
+                <ul start="0">
+                    <li id="nav-item"><a href="#table-of-contents-header">Table of Contents</a></li>
+                    <li id="nav-item"><a href="#introduction-header">Introduction</a></li>
+                    <li id="nav-item"><a href="#meeting-notes-header">Meeting Notes</a></li>
+                    <li id="nav-item"><a href="#extra-header">Extra</a></li>
+                    <li id="nav-item"><a href="#feedback-form-header">Feedback Form</a></li>
+                </ul>
             </nav>
         </header>
 
-        <hr>
-
         <main>
+            <h2 class="main-header">Project Idea Brainstorming</h2>
             <section>
                 <h3 id="introduction-header">1. Introduction</h3>
                 <h4>Attendance</h4>
@@ -79,6 +80,7 @@
                 </ul>
 
                 <h4>Discuss Common Interests</h4>
+                
                 <ul>
                     <li>Baking
                         <ul>
@@ -97,8 +99,20 @@
                 </ul>
 
                 <h4>Begin project idea brainstorming</h4>
-                <ul>
-                    <li>Fitness / Working out
+                <div class="idea-grid">
+                    <div id="grid-header-1">Baking</div>
+                    <div id="grid-header-2">Fitness / Working out</div>
+                    <div id="grid-body-1">
+                        <ul>
+                            <li>Recipe Finder
+                            <ul>
+                                <li>Recommends recipes based on what you have</li>
+                                <li>James said he can develop a machine learning algorithm for this</li>
+                                <li>Not too much work (if developed without ML)</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div id="grid-body-2">
                         <ul>
                             <li>Workout tracking app
                                 <ul>
@@ -114,24 +128,14 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li>Baking
-                        <ul>
-                            <li>Recipe Finder
-                            <ul>
-                                <li>Recommends recipes based on what you have</li>
-                                <li>James said he can develop a machine learning algorithm for this</li>
-                                <li>Not too much work (if developed without ML)</li>
-                            </ul>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 
                 Meeting time finished, will continue working on brainstorming next week.
             </section>
 
             <section>
-                <h3 id="extra-header">3. Extra</h3>
+                <h3 class="main-header">3. Extra</h3>
                 <div>
                     <h4>Action Items</h4>
                     <ul>
@@ -171,11 +175,9 @@
             </section>
         </main>
         
-        <hr>
-
         <footer>
             <section>
-                <h3 id="feedback-form-header">4. Feedback Form</h3>
+                <h3 class="main-header" id="feedback-form-header">4. Feedback Form</h3>
                 <form>
                     <fieldset>
                         <legend>Choose which colors you would like for team shirts</legend>
