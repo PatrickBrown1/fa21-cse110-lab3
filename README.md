@@ -1,3 +1,3 @@
-# cse110-lab2
+# cse110-lab3
 
-Website: https://patrickbrown1.github.io/cse110-lab2/
+Website: https://patrickbrown1.github.io/fa21-cse110-lab3/
