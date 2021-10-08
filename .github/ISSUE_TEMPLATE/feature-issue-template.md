@@ -8,5 +8,3 @@ assignees: ''
 ---
 
 Feature description
-
-Proof of completion (images, or how to test):
